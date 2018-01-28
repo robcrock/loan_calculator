@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Font Awesome Icons-->
+  <script src="img/fontawesome-all.min.js"></script>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <!--Import my custom styles-->
+  <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card grey-text grey darken lighten-4">
+          <div class="card-content">
+            <h3 class="center-align">Loan Calculator</h3>
+            <form id="loan-form">
+              <div class="row">
+                <div class="input-field">
+                  <i class="prefix fas fa-dollar-sign"></i>
+                  <input id="icon_prefix" type="number" id="amount" placeholder="Loan Amount">
+                  <label or="icon_prefix">Loan Amount</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field">
+                  <i class="prefix fas fa-percent"></i>
+                  <input id="icon_prefix" type="number" id="interest" placeholder="Interest">
+                  <label for="icon_prefix">Interest</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field">
+                  <input id="icon_prefix" type="number" id="years" placeholder="Years to Repay">
+                  <label for="icon_prefix">Years to Repay</label>
+                </div>
+              </div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Calculate</button>
+            </form>
+            <!-- LOADER -->
+            <!-- <div id="loading">
+              <img src="img/loading.gif" alt="loading spinner">
+            </div> -->
+            <!-- RESULTS -->
+            <div id="results">
+              <h5>Results</h5>
+              <div class="row">
+                <div class="input-field">
+                  <span>Monthly Payment</span>
+                  <input disabled id="icon_prefix" type="number" id="monthly-payment">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field">
+                  <span>Total Payment</span>
+                  <input disabled id="icon_prefix" type="number" id="total-payment">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field">
+                  <span>Total Interest</span>
+                  <input disabled id="icon_prefix" type="number" id="total-interest">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
