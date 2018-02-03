@@ -15,10 +15,10 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container darken lighten-2">
     <div class="row">
       <div class="col s12">
-        <div class="card grey-text grey darken lighten-4">
+        <div class="card">
           <div class="card-content">
             <div class="card-title center-align">
               Loan Calculator</div>
@@ -43,12 +43,14 @@
                   <label for="icon_prefix">Years to Repay</label>
                 </div>
               </div>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Calculate</button>
+              <div class="row">
+                <button class="btn waves-effect waves-light col s12" type="submit" name="action">Calculate</button>
+              </div>
             </form>
             <!-- LOADER -->
-            <!-- <div id="loading">
+            <div id="loading" class="center-align">
               <img src="img/loading.gif" alt="loading spinner">
-            </div> -->
+            </div>
             <!-- RESULTS -->
             <div id="results">
               <h5>Results</h5>

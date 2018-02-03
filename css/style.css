@@ -5,3 +5,6 @@
   color: #F44336 !important;
   padding: 10px;
 }
+#loading,#results {
+  display: none;
+}
